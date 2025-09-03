@@ -6,6 +6,7 @@ This repository contains the privacy policy and data deletion pages for the Deli
 
 - **Home Page**: `index.html` - Landing page with links to all legal documents
 - **Privacy Policy**: `privacy.html` - Comprehensive privacy policy
+- **Terms of Service**: `terms.html` - Terms and conditions for using the app
 - **Data Deletion**: `delete-account.html` - Instructions for account deletion
 
 ## Setup Instructions
@@ -51,6 +52,7 @@ Once GitHub Pages is enabled, your URLs will be:
 
 - **Home**: `https://YOUR-USERNAME.github.io/deliverylogger-policies/`
 - **Privacy Policy**: `https://YOUR-USERNAME.github.io/deliverylogger-policies/privacy.html`
+- **Terms of Service**: `https://YOUR-USERNAME.github.io/deliverylogger-policies/terms.html`
 - **Data Deletion**: `https://YOUR-USERNAME.github.io/deliverylogger-policies/delete-account.html`
 
 ## Using These URLs
