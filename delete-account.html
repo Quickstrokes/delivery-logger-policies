@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Your Account - DeliveryLogger</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Account & Data Deletion</h1>
+            <p class="subtitle">DeliveryLogger Mobile Application</p>
+        </header>
+
+        <nav class="breadcrumb">
+            <a href="index.html">Home</a> / Account Deletion
+        </nav>
+
+        <main class="content">
+            <div class="warning-box">
+                <h2>⚠️ Important Information</h2>
+                <p>Deleting your account will permanently remove all your data, including:</p>
+                <ul>
+                    <li>Your profile information</li>
+                    <li>All delivery records and history</li>
+                    <li>Restaurant configurations (for owners)</li>
+                    <li>Driver assignments (for owners)</li>
+                    <li>Access to any connected POS systems</li>
+                </ul>
+                <p><strong>This action cannot be undone.</strong></p>
+            </div>
+
+            <section>
+                <h2>How to Delete Your Account</h2>
+                <p>You can delete your DeliveryLogger account using any of these methods:</p>
+
+                <div class="method-card">
+                    <h3>Method 1: Through the App (Recommended)</h3>
+                    <ol>
+                        <li>Open the DeliveryLogger app on your device</li>
+                        <li>Navigate to <strong>Settings</strong> (gear icon)</li>
+                        <li>Scroll to <strong>Account Management</strong></li>
+                        <li>Tap <strong>Delete Account</strong></li>
+                        <li>Confirm your identity</li>
+                        <li>Review the deletion warning</li>
+                        <li>Type "DELETE" to confirm</li>
+                        <li>Tap <strong>Permanently Delete Account</strong></li>
+                    </ol>
+                </div>
+
+                <div class="method-card">
+                    <h3>Method 2: Email Request</h3>
+                    <p>Send an email to <a href="mailto:support@deliverylogger.com?subject=Account Deletion Request">support@deliverylogger.com</a> with:</p>
+                    <ul>
+                        <li>Subject: "Account Deletion Request"</li>
+                        <li>The email address associated with your account</li>
+                        <li>Your full name as it appears in the app</li>
+                        <li>Reason for deletion (optional)</li>
+                    </ul>
+                    <p>We will verify your identity and process the request within 48 hours.</p>
+                </div>
+
+                <div class="method-card">
+                    <h3>Method 3: Web Form</h3>
+                    <form id="deletion-form" class="deletion-form">
+                        <div class="form-group">
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Full Name:</label>
+                            <input type="text" id="name" name="name" required placeholder="As shown in app">
+                        </div>
+                        <div class="form-group">
+                            <label for="reason">Reason for Deletion (Optional):</label>
+                            <select id="reason" name="reason">
+                                <option value="">Select a reason...</option>
+                                <option value="no-longer-needed">No longer need the service</option>
+                                <option value="privacy-concerns">Privacy concerns</option>
+                                <option value="switching-apps">Switching to another app</option>
+                                <option value="too-many-emails">Too many emails</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" required>
+                                I understand that this action is permanent and cannot be undone
+                            </label>
+                        </div>
+                        <button type="submit" class="button button-danger">Submit Deletion Request</button>
+                    </form>
+                    <p class="form-note">Note: This form sends an email request. You will receive a confirmation email to verify your identity.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>What Happens Next?</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>Immediately:</h4>
+                        <p>Your account is deactivated and you're logged out of all devices</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Within 24 hours:</h4>
+                        <p>Your data is removed from active systems</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Within 30 days:</h4>
+                        <p>All personal data is permanently deleted from backups</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>After 30 days:</h4>
+                        <p>Complete deletion confirmed via email</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Data Export</h2>
+                <p>Before deleting your account, you may want to export your data:</p>
+                <ul>
+                    <li>In the app, go to Settings → Export Data</li>
+                    <li>Choose format (CSV or JSON)</li>
+                    <li>Select date range</li>
+                    <li>Tap "Export" to download your data</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Reactivation</h2>
+                <p>Once your account is deleted:</p>
+                <ul>
+                    <li>You cannot reactivate it or recover any data</li>
+                    <li>You can create a new account with the same email after 90 days</li>
+                    <li>Your username becomes available for others after deletion</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Contact Support</h2>
+                <p>If you have questions about account deletion or need assistance:</p>
+                <ul>
+                    <li>Email: <a href="mailto:support@deliverylogger.com">support@deliverylogger.com</a></li>
+                    <li>Response time: Within 48 hours</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Legal Compliance</h2>
+                <p>Our data deletion process complies with:</p>
+                <ul>
+                    <li>GDPR "Right to be Forgotten"</li>
+                    <li>CCPA data deletion requirements</li>
+                    <li>Facebook data deletion requirements</li>
+                    <li>Apple App Store guidelines</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 DeliveryLogger. All rights reserved.</p>
+            <p><a href="index.html">Back to Legal Home</a> | <a href="privacy.html">Privacy Policy</a></p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('deletion-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            const name = document.getElementById('name').value;
+            const reason = document.getElementById('reason').value;
+            
+            const subject = 'Account Deletion Request';
+            const body = `I would like to delete my DeliveryLogger account.%0D%0A%0D%0AEmail: ${email}%0D%0AName: ${name}%0D%0AReason: ${reason || 'Not specified'}%0D%0A%0D%0APlease confirm receipt of this request.`;
+            
+            window.location.href = `mailto:support@deliverylogger.com?subject=${subject}&body=${body}`;
+        });
+    </script>
+</body>
+</html>

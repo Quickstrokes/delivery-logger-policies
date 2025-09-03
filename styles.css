@@ -1,0 +1,390 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    min-height: 100vh;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #5e72e4 0%, #825ee4 100%);
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.95;
+    margin-bottom: 0.5rem;
+}
+
+.date {
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+/* Navigation */
+.breadcrumb {
+    padding: 1rem 2rem;
+    background: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.breadcrumb a {
+    color: #5e72e4;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+}
+
+.content {
+    padding: 0;
+}
+
+section {
+    margin-bottom: 2.5rem;
+}
+
+section:last-child {
+    margin-bottom: 0;
+}
+
+h2 {
+    color: #2d3748;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+h3 {
+    color: #4a5568;
+    font-size: 1.3rem;
+    margin: 1.5rem 0 0.75rem 0;
+}
+
+h4 {
+    color: #4a5568;
+    font-size: 1.1rem;
+    margin: 1rem 0 0.5rem 0;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: #4a5568;
+    line-height: 1.7;
+}
+
+ul, ol {
+    margin: 1rem 0 1rem 2rem;
+    color: #4a5568;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+strong {
+    color: #2d3748;
+}
+
+a {
+    color: #5e72e4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Cards for Index Page */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.card {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    border: none;
+}
+
+.card p {
+    margin-bottom: 1.5rem;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    background: linear-gradient(135deg, #5e72e4 0%, #825ee4 100%);
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(94, 114, 228, 0.4);
+    text-decoration: none;
+}
+
+.button-danger {
+    background: linear-gradient(135deg, #f56565 0%, #ed64a6 100%);
+}
+
+.button-danger:hover {
+    box-shadow: 0 5px 20px rgba(245, 101, 101, 0.4);
+}
+
+/* Warning Box */
+.warning-box {
+    background: #fff5f5;
+    border: 2px solid #feb2b2;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.warning-box h2 {
+    color: #c53030;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    border: none;
+}
+
+.warning-box p {
+    color: #742a2a;
+}
+
+.warning-box ul {
+    margin: 1rem 0 1rem 2rem;
+    color: #742a2a;
+}
+
+/* Method Cards */
+.method-card {
+    background: #f7fafc;
+    border-left: 4px solid #5e72e4;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+}
+
+.method-card h3 {
+    color: #2d3748;
+    margin-top: 0;
+}
+
+/* Form Styles */
+.deletion-form {
+    background: #f7fafc;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-top: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #4a5568;
+    font-weight: 600;
+}
+
+.form-group input[type="email"],
+.form-group input[type="text"],
+.form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input[type="email"]:focus,
+.form-group input[type="text"]:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #5e72e4;
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+.form-note {
+    font-size: 0.9rem;
+    color: #718096;
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+/* Timeline */
+.timeline {
+    margin: 2rem 0;
+}
+
+.timeline-item {
+    background: #f7fafc;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    border-left: 3px solid #5e72e4;
+    border-radius: 0 8px 8px 0;
+}
+
+.timeline-item h4 {
+    color: #5e72e4;
+    margin: 0 0 0.5rem 0;
+}
+
+.timeline-item p {
+    margin: 0;
+    color: #4a5568;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem;
+    background: #f7fafc;
+    border-radius: 12px;
+}
+
+.contact h3 {
+    color: #2d3748;
+    margin-bottom: 1rem;
+}
+
+/* Compliance Section */
+.compliance {
+    background: #edf2f7;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-top: 2rem;
+}
+
+/* Footer */
+footer {
+    background: #2d3748;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+footer p {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: #a0aec0;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+    
+    main {
+        padding: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .method-card,
+    .deletion-form {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 2rem 1rem;
+    }
+    
+    header h1 {
+        font-size: 1.75rem;
+    }
+    
+    main {
+        padding: 1rem;
+    }
+    
+    .button {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
